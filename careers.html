@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Roadmap</title>
+    <style>
+        /* General Reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f7fe;
+            color: #333;
+        }
+
+        /* Header Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            height: 80px;
+            width: auto;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #3b82f6;
+            text-decoration: underline;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: 2px solid #3b82f6;
+            border-radius: 6px;
+            color: #3b82f6;
+            background-color: transparent;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #3b82f6;
+            color: #fff;
+            box-shadow: 0 0 0 4px #3b83f65f;
+        }
+
+        /* Main Content */
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Career Card Styling */
+        .career-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .career-card:hover {
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .career-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #3b82f6;
+        }
+
+        .career-description {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        /* Roadmap List */
+        .roadmap {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .roadmap li {
+            background-color: #e8f0fe;
+            border-left: 4px solid #3b82f6;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .roadmap li:hover {
+            background-color: #d7e5fb;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #3b82f6;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="login.html">Log In</a>
+            <a href="register.html" class="btn">Join Us</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2 style="text-align: center; color: #333; margin-bottom: 20px;">Explore Career Paths</h2>
+
+        <!-- Career Option 1 -->
+        <div class="career-card">
+            <div class="career-title">Web Developer</div>
+            <div class="career-description">
+                Become a professional Web Developer and build amazing websites and web applications.
+            </div>
+            <ul class="roadmap">
+                <li>Learn HTML, CSS, and JavaScript.</li>
+                <li>Understand frontend frameworks like React or Angular.</li>
+                <li>Learn backend development using Node.js, PHP, or Python.</li>
+                <li>Explore databases like MySQL or MongoDB.</li>
+                <li>Build projects and start your portfolio.</li>
+            </ul>
+        </div>
+
+        <!-- Career Option 2 -->
+        <div class="career-card">
+            <div class="career-title">Data Scientist</div>
+            <div class="career-description">
+                Analyze data to extract insights and solve real-world problems.
+            </div>
+            <ul class="roadmap">
+                <li>Learn Python or R programming.</li>
+                <li>Understand statistics and data analysis fundamentals.</li>
+                <li>Explore libraries like Pandas, NumPy, and Matplotlib.</li>
+                <li>Master Machine Learning techniques.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Explore. Learn. Grow. | Your Career Path Starts Here.
+    </footer>
+</body>
+</html>

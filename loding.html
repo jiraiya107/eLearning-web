@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running Frog Button</title>
+    <style>
+        /* General Reset */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f7fe;
+        }
+
+        /* Loading Button */
+        .loading-btn {
+            position: relative;
+            width: 200px;
+            height: 50px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            border: none;
+            background-color: #3b82f6;
+            border-radius: 30px;
+            cursor: pointer;
+            overflow: hidden;
+            outline: none;
+        }
+
+        /* Frog Animation */
+        .frog {
+            position: absolute;
+            top: 10px;
+            left: -30px; /* Start off-screen */
+            font-size: 30px;
+            animation: run-frog 2s linear infinite;
+        }
+
+        /* Animation Keyframes */
+        @keyframes run-frog {
+            0% {
+                left: -30px; /* Start position */
+            }
+            50% {
+                transform: rotate(10deg); /* Slight jump effect */
+            }
+            100% {
+                left: 100%; /* End position */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Button -->
+    <button class="loading-btn">
+        Loading
+        <div class="frog">🐸</div>
+    </button>
+</body>
+</html>
